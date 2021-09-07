@@ -21,7 +21,7 @@ library(mediation)
 library(ggplot2)
 library(BoutrosLab.plotting.general)
 
-
+asd <- 12
 data <- read.delim("db_effecttagging.txt", header = TRUE)
 
 data$minute <- as.numeric(substr(data$Posixct, 15, 16))
@@ -30,6 +30,7 @@ data$hourminute <- data$hour + data$minute/60
 data$negDepth <- data$Depth
 data$Depth = -data$Depth
 
+a <- 2
 
 asgedata <- subset(data, Ind == "Asgeir")
 balddata <- subset(data, Ind == "Balder") 
