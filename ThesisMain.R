@@ -28,7 +28,6 @@ data$hourminute <- data$hour + data$minute/60
 data$negDepth <- data$Depth
 data$Depth = -data$Depth
 
-a <- 2
 
 asgedata <- subset(data, Ind == "Asgeir")
 balddata <- subset(data, Ind == "Balder") 
