@@ -10,7 +10,6 @@ install.packages("BoutrosLab.plotting.general")
 install.packages("pracma")
 install.packages("NSM3")
 library(NSM3)
-
 library(pracma)
 library(dplyr)
 library(lme4)
@@ -21,7 +20,6 @@ library(mediation)
 library(ggplot2)
 library(BoutrosLab.plotting.general)
 
-asd <- 12
 data <- read.delim("db_effecttagging.txt", header = TRUE)
 
 data$minute <- as.numeric(substr(data$Posixct, 15, 16))
